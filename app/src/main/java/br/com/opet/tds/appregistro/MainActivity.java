@@ -34,7 +34,8 @@ public class MainActivity extends Activity {
 
     private void atualizarArtistas(){
         if(adapter == null) {
-            adapter = new ArtistaAdapter(getApplicationContext(), R.layout.artista_item, artistas);
+            adapter = new ArtistaAdapter(
+                    getApplicationContext(), R.layout.artista_item, artistas);
             listArtista.setAdapter(adapter);
         }else{
             adapter.notifyDataSetChanged();
